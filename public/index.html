@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./icon-fixed-white-close.png">
+    <title>Idea Slam</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <img class=img src="./ideaSlam.png" alt="icon">
+        <div class="directions">
+            Directions:
+            <ol>
+                <li>Click on the "download template" button for the program you teach. This will download an excel
+                    spreadsheet onto your computer. </li>
+                <li>Fill in the spreadsheet and upload it using the "upload class data" button.</li>
+                <li>Click on "submit" to download the correct folder structure for your class.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="left-side inner-flex">
+            <div class="inner-header">
+                IB
+            </div>
+            <!--  -->
+            <div class="template-button">
+                <a href="./IB_Template.xlsx" download>
+                    <button href="./IB_Template.xlsx" download class="button-82-pushable" role="button"><span
+                            class="button-82-shadow"></span><span class="button-82-edge"></span><span
+                            class="button-82-front text">Download Template
+                        </span></button>
+                </a>
+            </div>
+
+
+            <form action="/downloadIB" enctype='multipart/form-data' method="post">
+                <input type="file" name="myFile" id="">
+                <input type="submit">
+            </form>
+
+        </div>
+        <div class="right-side inner-flex">
+            <div class="inner-header">
+                iGCSE
+            </div>
+            <div class="template-button">
+                <a href="./IB_Template.xlsx" download>
+                    <button href="./IB_Template.xlsx" download class="button-82-pushable" role="button"><span
+                            class="button-82-shadow"></span><span class="button-82-edge"></span><span
+                            class="button-82-front text">Download Template
+                        </span></button>
+                </a>
+            </div>
+
+            <form action="/downloadiGCSE" enctype='multipart/form-data' method="post">
+                <input type="file" name="myFile">
+                <input type="submit">
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
