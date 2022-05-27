@@ -152,6 +152,4 @@ app.post('/downloadIB', upload.single('myFile'), (request, response) => {
   }, 1000);
 });
 
-app.listen(process.env.PORT | PORT, () => {
-  console.log(`Now listening on ${PORT}`);
-});
+app.listen(process.env.PORT || PORT);
