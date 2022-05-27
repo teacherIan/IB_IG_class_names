@@ -16,6 +16,10 @@ app.set('view engine', 'ejs');
 
 let filePath;
 
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
+
 //IB
 app.post('/downloadIB', upload.single('myFile'), (request, response) => {
   //archive
