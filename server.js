@@ -9,6 +9,8 @@ const readXlsxFile = require('read-excel-file/node');
 const PDFDocument = require('pdfkit');
 const archiver = require('archiver');
 
+PDFDocument.setMaxListeners(0);
+
 //frontend assets all in the public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -87,7 +89,7 @@ app.post('/downloadIB', upload.single('myFile'), (request, response) => {
 });
 
 //iGCSE
-app.post('/downloadIB', upload.single('myFile'), (request, response) => {
+app.post('/downloadiGCSE', upload.single('myFile'), (request, response) => {
   let doc = new PDFDocument();
   //archive
   var output = fs.createWriteStream('./myClass.zip');

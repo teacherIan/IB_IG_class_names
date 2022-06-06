@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./icon-fixed-white-close.png">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <title>Idea Slam</title>
 
 </head>
@@ -29,27 +28,32 @@
 
     </div>
 
-    <!--     
+
     <div class="container">
         <div class="left-side inner-flex">
             <div class="inner-header">
                 IB
             </div>
-            
-            <div class="template-button">
-                <a href="./IB_Template.xlsx" download>
-                    <button href="./IB_Template.xlsx" download class="button-82-pushable" role="button"><span
-                            class="button-82-shadow"></span><span class="button-82-edge"></span><span
-                            class="button-82-front text">Download Template
-                        </span></button>
-                </a>
+
+            <div>
+
+                <div class="template-button">
+                    <a href="./IB_Template.xlsx" download>
+                        <input type="submit" value="Download Template">
+                        </input>
+                    </a>
+                </div>
+            </div>
+            <div>
+
+                <form action="/downloadIB" enctype='multipart/form-data' method="post">
+
+                    <input type="file" name="myFile" id="">
+
+                    <input type="submit">
+                </form>
             </div>
 
-
-            <form action="/downloadIB" enctype='multipart/form-data' method="post">
-                <input type="file" name="myFile" id="">
-                <input type="submit">
-            </form>
 
         </div>
         <div class="right-side inner-flex">
@@ -57,12 +61,11 @@
                 iGCSE
             </div>
             <div class="template-button">
-                <a href="./IB_Template.xlsx" download>
-                    <button href="./IB_Template.xlsx" download class="button-82-pushable" role="button"><span
-                            class="button-82-shadow"></span><span class="button-82-edge"></span><span
-                            class="button-82-front text">Download Template
-                        </span></button>
+                <a href="./iG_Template.xlsx" download>
+                    <input type="submit" value="Download Template">
+                    </input>
                 </a>
+
             </div>
 
             <form action="/downloadiGCSE" enctype='multipart/form-data' method="post">
@@ -73,22 +76,7 @@
 
         </div>
 
-    </div> -->
-
-
-    <div class="container">
-        <div class="row gx-5 px-4 m-6">
-            <div class="col p-3 m-4 bg-secondary text-white gx-5 px-4">
-                IB
-            </div>
-            <div class="col p-3 m-4 bg-secondary text-white gx-5 px-4">
-                IG
-            </div>
-
-        </div>
     </div>
-
-
 
 
 </body>
