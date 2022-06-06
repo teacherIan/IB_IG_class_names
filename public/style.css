@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,6 +84,8 @@ li {
 
 
 /* CSS */
+
+/* 
 .button-82-pushable {
     position: relative;
     border: none;
@@ -175,4 +177,14 @@ li {
 
 .button-82-pushable:focus:not(:focus-visible) {
     outline: none;
+} */
+
+
+.header {
+    width: 100vw;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    height: 45vh;
+
 }
