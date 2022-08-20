@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./icon-fixed-white-close.png">
+    <!-- CSS only -->
+
     <title>Idea Slam</title>
 
 </head>
@@ -26,24 +28,41 @@
 
     </div>
 
+
     <div class="container">
         <div class="left-side inner-flex">
             <div class="inner-header">
                 IB
             </div>
+<<<<<<< HEAD
             <!--  -->
             <div class="template-button">
                 <a href="./IB_Template.xlsx" download>
                     <button href="./IB_Template.xlsx" download>Download Template
                     </button>
                 </a>
+=======
+
+            <div>
+
+                <div class="template-button">
+                    <a href="./IB_Template.xlsx" download>
+                        <input type="submit" value="Download Template">
+                        </input>
+                    </a>
+                </div>
+>>>>>>> dbb972c58b4a107e88366224566cf861bf5f4e3a
+            </div>
+            <div>
+
+                <form action="/downloadIB" enctype='multipart/form-data' method="post">
+
+                    <input type="file" name="myFile" id="">
+
+                    <input type="submit">
+                </form>
             </div>
 
-
-            <form action="/downloadIB" enctype='multipart/form-data' method="post">
-                <input type="file" name="myFile" id="">
-                <input type="submit">
-            </form>
 
         </div>
         <div class="right-side inner-flex">
@@ -51,9 +70,16 @@
                 iGCSE
             </div>
             <div class="template-button">
+<<<<<<< HEAD
                 <a href="./IB_Template.xlsx" download>
                     <button href="./IB_Template.xlsx" download role="button">Download Template</button>
+=======
+                <a href="./iG_Template.xlsx" download>
+                    <input type="submit" value="Download Template">
+                    </input>
+>>>>>>> dbb972c58b4a107e88366224566cf861bf5f4e3a
                 </a>
+
             </div>
 
             <form action="/downloadiGCSE" enctype='multipart/form-data' method="post">
