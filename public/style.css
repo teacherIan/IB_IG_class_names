@@ -1,69 +1,68 @@
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow: hidden;
 
-}
+ }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    color: rgb(191, 25, 25);
+ body {
+     width: 100vw;
+     height: 100vh;
+     color: rgb(191, 25, 25);
 
-}
+ }
 
-.template-button {}
 
-.header {
-    width: 100vw;
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    height: 45vh;
 
-}
+ .header {
+     width: 100vw;
+     font-size: 20px;
+     align-items: center;
+     text-align: center;
+     height: 45vh;
 
-.img {
-    width: 30%;
+ }
 
-}
+ .img {
+     width: 30%;
 
-.inner-flex {
-    width: 50%;
+ }
 
-    border-radius: 100px;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
+ .inner-flex {
+     width: 50%;
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
+     border-radius: 100px;
+     height: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+ }
 
-.inner-header {
-    color: rgb(191, 25, 25);
-    font-size: 100px;
+ .container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 50vh;
+ }
 
-}
+ .inner-header {
+     color: rgb(191, 25, 25);
+     font-size: 100px;
 
-.directions {
-    color: rgb(191, 25, 25);
-    font-size: 30px;
+ }
 
-}
+ .directions {
+     color: rgb(191, 25, 25);
+     font-size: 30px;
 
-li {
-    margin: 20px;
-}
-=======
+ }
+
+ li {
+     margin: 20px;
+ }
+
  * {
      margin: 0;
      padding: 0;
@@ -152,20 +151,3 @@ li {
 
 
  }
-
-
- input[type=button],
- input[type=submit],
- input[type=reset],
- input[type=file] {
-     background-color: rgb(191, 25, 25);
-     color: white;
-     padding: 32px 32px;
-     text-decoration: none;
-     margin: 4px 2px;
-     cursor: pointer;
-     border-radius: 4px;
-     width: 20vw;
-     text-align: center;
- }
->>>>>>> dbb972c58b4a107e88366224566cf861bf5f4e3a

@@ -11,6 +11,8 @@ const archiver = require('archiver');
 
 PDFDocument.setMaxListeners(0);
 
+const uploadsDirectory = './uploads';
+
 //frontend assets all in the public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -18,9 +20,9 @@ app.set('view engine', 'ejs');
 
 let filePath;
 
-app.get('/', (req, res) => {
-  res.send('Hello');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello');
+// });
 
 //IB
 app.post('/downloadIB', upload.single('myFile'), (request, response) => {
@@ -33,6 +35,7 @@ app.post('/downloadIB', upload.single('myFile'), (request, response) => {
     console.log(archive.pointer() + ' total bytes');
 
     response.download('./myClass.zip');
+
     // console.log(
     //   'archiver has been finalized and the output file descriptor has closed.'
     // );
